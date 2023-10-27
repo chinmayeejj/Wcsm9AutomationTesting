@@ -1,5 +1,8 @@
 package assignment;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -10,7 +13,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class ActitimeDoubleClick 
 {
-	public static void main(String[] args) throws InterruptedException 
+	public static void main(String[] args) throws InterruptedException, AWTException 
 	{
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
@@ -38,6 +41,23 @@ public class ActitimeDoubleClick
 		WebElement chooseFile = driver.findElement(By.xpath("//input[@name='formCustomInterfaceLogo.logo']"));
 		act.doubleClick(chooseFile).perform();
 		
+		Thread.sleep(2000);
+		
+		Robot robot= new Robot();
+		for(int i=1;i<=3;i++)
+		{
+			robot.keyPress(KeyEvent.VK_TAB);
+			Thread.sleep(2000);
+			robot.keyRelease(KeyEvent.VK_TAB);
+		}
+
+		Thread.sleep(2000);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		//again opening the window
+		
+		Thread.sleep(3000);
+		driver.quit();
 		
 	}
 

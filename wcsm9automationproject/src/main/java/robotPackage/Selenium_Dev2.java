@@ -34,12 +34,12 @@ public class Selenium_Dev2
 			
 			//to shift control from Print to Cancel
 			robo.keyPress(KeyEvent.VK_TAB);
-			robo.keyPress(KeyEvent.VK_TAB);	
+			robo.keyRelease(KeyEvent.VK_TAB);	
 			Thread.sleep(2000);
 			
 			//to hit enter on cancel button
 			robo.keyPress(KeyEvent.VK_ENTER);
-			robo.keyPress(KeyEvent.VK_ENTER );
+			robo.keyRelease(KeyEvent.VK_ENTER );
 			Thread.sleep(4000);
 			driver.quit();
 			
