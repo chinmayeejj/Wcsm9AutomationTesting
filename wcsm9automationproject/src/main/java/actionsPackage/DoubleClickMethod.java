@@ -23,6 +23,16 @@ public class DoubleClickMethod
 		
 		WebElement first = driver.findElement(By.xpath("//button[.='Yes'][1]"));
 		act.doubleClick(first).perform();
+		
+		WebElement no = driver.findElement(By.xpath("(//button[.='No'])[2]"));
+		act.doubleClick(no).perform();
+		
+		WebElement rate = driver.findElement(By.xpath("//button[.='4']"));
+		act.doubleClick(rate).perform();
+		
+		
+		
 	}
+	
 
 }
