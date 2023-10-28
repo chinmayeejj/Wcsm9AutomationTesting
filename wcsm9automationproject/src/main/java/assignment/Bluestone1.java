@@ -6,6 +6,7 @@ import java.awt.event.KeyEvent;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,9 +34,14 @@ public class Bluestone1
 		
 		driver.findElement(By.linkText("Band")).click();
 		
+		//to selecct filter by text bydouble click and click and hold
 		WebElement filter = driver.findElement(By.xpath("//span[text()='FILTERED BY']"));
-		act.doubleClick(filter).perform();
-		act.clickAndHold(filter).perform();
+		for(int i=0 ;i<=2;i++)
+		{
+			act.doubleClick(filter).perform();
+			act.clickAndHold(filter).perform();
+		}
+	
 		
 		Robot robot=new Robot();
 		
@@ -51,6 +57,7 @@ public class Bluestone1
 		
 		robot.keyRelease(KeyEvent.VK_CONTROL);
 		robot.keyRelease(KeyEvent.VK_V);
+		
 		
 		driver.findElement(By.name("submit_search")).click();
 
