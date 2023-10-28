@@ -43,6 +43,7 @@ public class ActitimeDoubleClick
 		
 		Thread.sleep(2000);
 		
+		//To handle the pop-up window 
 		Robot robot= new Robot();
 		for(int i=1;i<=3;i++)
 		{
@@ -55,6 +56,17 @@ public class ActitimeDoubleClick
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		//again opening the window
+		
+		for(int i=1;i<=4;i++)
+		{
+			robot.keyPress(KeyEvent.VK_TAB);
+			Thread.sleep(2000);
+			robot.keyRelease(KeyEvent.VK_TAB);
+		}
+
+		Thread.sleep(2000);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
 		
 		Thread.sleep(3000);
 		driver.quit();
