@@ -19,7 +19,7 @@ public class Way4
 	public static void main(String[] args) throws IOException 
 	{
 		WebDriver driver=new ChromeDriver();
-		EventFiringWebDriver efw=new EventFiringWebDriver(driver);
+		EventFiringWebDriver efw=new EventFiringWebDriver(driver);//deprecation
 		efw.manage().window().maximize();
 		efw.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		

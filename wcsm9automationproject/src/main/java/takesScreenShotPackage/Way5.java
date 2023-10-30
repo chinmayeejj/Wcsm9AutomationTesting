@@ -25,7 +25,7 @@ public class Way5
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		//call the method
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		//define way to store ss
+		//define way to store ss cj
 		File dest = new File("./Screenshots/Selenium_dev.jpg");
 		//stores ss into destination using files class of google
 		Files.copy(src, dest);
