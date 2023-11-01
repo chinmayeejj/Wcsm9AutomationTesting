@@ -1,5 +1,8 @@
 package synchronizationPackage;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.time.Duration;
 import java.util.Set;
 
@@ -11,8 +14,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Flipcart2 
+//End to End Scenario
 {
-	public static void main(String[] args) 
+	public static void main(String[] args) throws InterruptedException, AWTException 
 	{
 
 		WebDriver driver =new ChromeDriver();
@@ -58,16 +62,23 @@ public class Flipcart2
 		//driver.findElement(By.xpath("//span[text()='Check']")).clear();
 		
 		driver.findElement(By.xpath("//span[text()='Check']")).click();
+		Thread.sleep(2000);
 		
 		driver.findElement(By.xpath("//button[text()='Add to cart']")).click();
+		Thread.sleep(2000);
 		
 		 //WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
 		 //wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//div[text()='Remove']")))).click();
 		
-		WebElement element = driver.findElement(By.xpath("//div[text()='Remove']"));
-		
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+		robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
 
-		driver.findElement(By.xpath("//div[@class='td-FUv WDiNrH']/descendant::div[text()='Remove']")).click();
+		
+		 driver.findElement(By.xpath("//div[text()='Remove']")).click();
+		 Thread.sleep(2000);
+		 
+		driver.findElement(By.xpath("//div[@class='_3dsJAO _24d-qY FhkMJZ']")).click();
 		
 		
 		
