@@ -43,5 +43,5 @@ public static void main(String[] args) throws IOException, InterruptedException 
 		File dest = new File("./Screenshots/disableTB.png");
 		
 		Files.copy(src, dest);
-
-}}
+	}
+}

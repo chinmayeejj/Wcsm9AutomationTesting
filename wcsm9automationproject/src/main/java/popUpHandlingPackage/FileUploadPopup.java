@@ -1,4 +1,4 @@
-package assignment;
+package popUpHandlingPackage;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class ActitimeDoubleClick 
+public class FileUploadPopup 
 {
 	public static void main(String[] args) throws InterruptedException, AWTException 
 	{
@@ -29,10 +29,9 @@ public class ActitimeDoubleClick
 		driver.findElement(By.name("pwd")).sendKeys("manager");
 		driver.findElement(By.id("loginButton")).click();
 		
-//		//double click on settings module
-//		WebElement settings = driver.findElement(By.xpath("//div[@class='label' and .='Settings']"));
-//		act.doubleClick(settings).perform();
-		driver.findElement(By.partialLinkText("Settings")).click();
+		//double click on settings module
+		WebElement settings = driver.findElement(By.xpath("//div[@class='label' and .='Settings']"));//no need of doublr click find right xpath
+		act.doubleClick(settings).perform();
 		driver.findElement(By.linkText("Logo & Color Scheme")).click();
 		
 		driver.findElement(By.id("uploadNewLogoOption")).click();
@@ -46,7 +45,7 @@ public class ActitimeDoubleClick
 		
 		//To handle the pop-up window 
 		Robot robot= new Robot();
-		for(int i=1;i<=2;i++)
+		for(int i=1;i<=3;i++)
 		{
 			robot.keyPress(KeyEvent.VK_TAB);
 			Thread.sleep(2000);
@@ -68,9 +67,6 @@ public class ActitimeDoubleClick
 		Thread.sleep(2000);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
-		
-		Thread.sleep(3000);
-		driver.quit();
 		
 	}
 
