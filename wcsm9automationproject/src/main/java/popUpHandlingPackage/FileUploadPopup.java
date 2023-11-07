@@ -3,6 +3,8 @@ package popUpHandlingPackage;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -13,7 +15,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class FileUploadPopup 
 {
-	public static void main(String[] args) throws InterruptedException, AWTException 
+	public static void main(String[] args) throws InterruptedException, AWTException, IOException 
 	{
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
@@ -44,29 +46,16 @@ public class FileUploadPopup
 		Thread.sleep(2000);
 		
 		//To handle the pop-up window 
-		Robot robot= new Robot();
-		for(int i=1;i<=3;i++)
-		{
-			robot.keyPress(KeyEvent.VK_TAB);
-			Thread.sleep(2000);
-			robot.keyRelease(KeyEvent.VK_TAB);
-		}
-
+		File file = new File("./autoIt/fileUpload.exe");
+		String absPath=file.getAbsolutePath();
 		Thread.sleep(2000);
-		robot.keyPress(KeyEvent.VK_ENTER);
-		robot.keyRelease(KeyEvent.VK_ENTER);
-		//again opening the window
+
 		
-		for(int i=1;i<=4;i++)
-		{
-			robot.keyPress(KeyEvent.VK_TAB);
-			Thread.sleep(2000);
-			robot.keyRelease(KeyEvent.VK_TAB);
-		}
+		Runtime.getRuntime().exec(absPath);
+		Thread.sleep(6000);
+		Runtime.getRuntime().exec(absPath);
 
-		Thread.sleep(2000);
-		robot.keyPress(KeyEvent.VK_ENTER);
-		robot.keyRelease(KeyEvent.VK_ENTER);
+		
 		
 	}
 
