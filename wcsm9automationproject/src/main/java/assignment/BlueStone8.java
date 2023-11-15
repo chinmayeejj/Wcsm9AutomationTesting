@@ -7,22 +7,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriver.Window;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class BlueStone7 
+public class BlueStone8 
 {
-	public static void main(String[] args) throws InterruptedException 
+	public static void main(String[] args) throws InterruptedException
 	{
-		
-		WebDriver	driver=new ChromeDriver();	
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		
-		driver.get("https://www.bluestone.com/");
-		
+	   WebDriver driver=new ChromeDriver();
+	   driver.manage().window().maximize();
+	   driver.get("https://www.bluestone.com/");
+	   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+	   
+
 		driver.findElement(By.id("denyBtn")).click();
 		Thread.sleep(2000);
 
@@ -58,24 +56,29 @@ public class BlueStone7
 			}
 		}
 		
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[@class='select-size']")).click();
+		Thread.sleep(2000);
+		WebElement size = driver.findElement(By.xpath("//span[.='2-6(2 6/16\")']"));
+		String bangleSize=size.getText();
+		size.click();
+		
 		driver.findElement(By.id("buy-now")).submit();
 		
-		WebElement err=driver.findElement(By.xpath("//div[text()='* This field is required']"));
+		Thread.sleep(2000);
+		String buyPageSize = driver.findElement(By.xpath("//span[.='2-6(2 6/16\")']")).getText();
 		
-		if(err.isDisplayed())
+		if(buyPageSize.equals(bangleSize))
 		{
-			System.out.println( err.getText());
-			System.out.println("select bangle size");
+			System.out.println("Bangle size is matched ");
 		}
 		else
 		{
-			System.out.println("fail");
+			System.out.println("not matching");           
 		}
 		
 		Thread.sleep(5000);
 		driver.quit();
-
 	}
 
 }

@@ -1,6 +1,7 @@
 package assignment;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -9,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class BlueStone5
+public class BlueStone6 
 {
 	public static void main(String[] args) throws InterruptedException 
 	{
@@ -49,50 +50,20 @@ public class BlueStone5
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[.='Price Low to High ']")).click();
 		Thread.sleep(2000);
+		
+		ArrayList<String> pList=new ArrayList<String>();
 		List<WebElement> lowToHigh=driver.findElements(By.xpath("//span[@class='new-price']"));
 		 for(WebElement price:lowToHigh)
 		 {
 			 System.out.println(price.getText());
+			 String txt = price.getText();
+			 pList.add(txt);
 		 }
-		Thread.sleep(2000);
-		
-		boolean res = isSame(defPrice, lowToHigh);
-		System.out.println(res);
-
-		
+		 
+//		 for(int i=0;i<pList.size();i++)
+//		 {
+//			 Strin
+//		 }
 	}
-		
-		
-		
-		public static boolean isSame(List<WebElement> defPrice, List<WebElement>  lowToHigh)
-		{
-			System.out.println();
-			for(WebElement price:defPrice)
-			{
-				String p1 = price.getText();
-		        boolean foundMatch = false;
-				for(WebElement price1:lowToHigh)
-				{
-					String p2=price1.getText();
-					if(!(p1.equalsIgnoreCase(p2)))
-					{
-						foundMatch = true;
-		                break;  // Exit the inner loop once a match is found
-
-					}
-					else
-					{
-						return false;
-					}
-				}
-			}
-			return true;
-		}
-		
-		
-		
-
-		
-		
 
 }
