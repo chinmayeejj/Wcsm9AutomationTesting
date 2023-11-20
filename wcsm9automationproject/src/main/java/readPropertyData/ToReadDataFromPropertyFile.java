@@ -4,6 +4,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import keywordDrivenFramework.Flib2;
+
 public class ToReadDataFromPropertyFile 
 {
 	public static void main(String[] args) throws IOException 
@@ -14,8 +16,15 @@ public class ToReadDataFromPropertyFile
 		
 		prop.load(fis);
 		
-		String pass = prop.getProperty("password");
-		System.out.println(pass);
+		String browser2 = prop.getProperty("browser2");
+		System.out.println(browser2);
+		
+		Flib2 flib2 = new Flib2();
+		
+	    String	pass=flib2.readData("./src/main/resources/config.properties", "password");
+	    System.out.println(pass);
+		
+		
 	}
 
 }
