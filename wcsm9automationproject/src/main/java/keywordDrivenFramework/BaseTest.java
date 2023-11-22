@@ -1,5 +1,6 @@
-package practice;
+package keywordDrivenFramework;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -7,13 +8,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Base 
+public class BaseTest extends Flib
 {
+   
 	static WebDriver driver;
 	
 	//method to open a browser
-	public void openBrowser(String browserName)
+	public void openBrowser() throws IOException
 	{
+		 Flib flib=new Flib();
+			
+		    String browserName=flib.readDataFromProperty("./src/main/resources/config.properties", "browser1");
+		    String url=flib.readDataFromProperty("./src/main/resources/config.properties", "url");
+		    
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
 			driver=new ChromeDriver();	
@@ -26,9 +33,21 @@ public class Base
 		{
 			driver=new EdgeDriver();
 		}
+		else
+		{
+			System.out.println("invalid browser value!");
+		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		driver.get(url);
 		
 	}
+	
+	public void closeBrowser()
+	{
+		driver.quit();
+	}
+	
+	
 
 }

@@ -3,6 +3,7 @@ package dataDrivenFramework1;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Properties;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
@@ -13,7 +14,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Flib 
 {
-	//to read the data
+	//to read the data from excel
 	public String readExcelData(String excelPath, String sheetName, int rowNo,int cellNo) throws EncryptedDocumentException, IOException
 	{
 		FileInputStream fis = new FileInputStream(excelPath);
@@ -52,4 +53,17 @@ public class Flib
 		int rowNo = sheet.getLastRowNum();
 		return rowNo;
 	}
+	//to read data from property file
+		public String readData(String propertyPath, String key ) throws IOException
+		{
+			FileInputStream fis=new FileInputStream(propertyPath);
+			
+			Properties prop =new Properties();
+			
+			prop.load(fis);
+			
+			String data= prop.getProperty(key);
+			
+			return data;
+		}
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import keywordDrivenFramework.Flib2;
+import keywordDrivenFramework.Flib;
 
 public class ActiTimeKeyword 
 {
@@ -17,13 +17,13 @@ public class ActiTimeKeyword
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
-		Flib2 flib2 = new Flib2();
+		Flib flib = new Flib();
 		
-		driver.get(flib2.readData("./src/main/resources/config.properties", "url"));
+		driver.get(flib.readDataFromProperty("./src/main/resources/config.properties", "url"));
 		
-		driver.findElement(By.name("username")).sendKeys(flib2.readData("./src/main/resources/config.properties", "username"));
+		driver.findElement(By.name("username")).sendKeys(flib.readDataFromProperty("./src/main/resources/config.properties", "username"));
 		Thread.sleep(2000);
-		driver.findElement(By.name("pwd")).sendKeys(flib2.readData("./src/main/resources/config.properties", "password"));
+		driver.findElement(By.name("pwd")).sendKeys(flib.readDataFromProperty("./src/main/resources/config.properties", "password"));
 		Thread.sleep(2000);
 		driver.findElement(By.id("loginButton")).click();
 		
