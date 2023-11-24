@@ -18,8 +18,8 @@ public class ActiTimeValidLogin extends BaseTest
 				
 		//login to actitime
 		
-		String usn = flib.readDataFromProperty("./src/main/resources/config.properties", "username");
-		String pwd = flib.readDataFromProperty("./src/main/resources/config.properties", "password");
+		String usn = flib.readDataFromProperty(PROP_PATH, "username");
+		String pwd = flib.readDataFromProperty(PROP_PATH, "password");
 		driver.findElement(By.name("username")).sendKeys(usn);
 		Thread.sleep(2000);
 		driver.findElement(By.name("pwd")).sendKeys(pwd);

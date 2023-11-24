@@ -16,11 +16,11 @@ public class ActiTimeInvalidLogin extends BaseTest
 		
 		
 		
-		int rowCount = flib.getRowCount("./src/main/resources/ActiTimeTestData1.xlsx", "invalidcreds");
+		int rowCount = flib.getRowCount(EXCEL_PATH, INVALIDCREDS_SHEET);
 		for(int i=1;i<=rowCount;i++)
 		{
-			String usn = flib.readExcelData("./src/main/resources/ActiTimeTestData1.xlsx", "invalidcreds", i, 0);
-			String pwd = flib.readExcelData("./src/main/resources/ActiTimeTestData1.xlsx", "invalidcreds", i, 1);
+			String usn = flib.readExcelData(EXCEL_PATH, INVALIDCREDS_SHEET, i, 0);
+			String pwd = flib.readExcelData(EXCEL_PATH, INVALIDCREDS_SHEET, i, 1);
 
 		
 			//login to actitime
