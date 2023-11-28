@@ -1,15 +1,22 @@
 package pageObjectModel;
 
+import java.io.IOException;
+
 public class ActiTimeValidLogin extends BaseTest
 {
-	public static void main(String[] args) 
+	public static void main(String[] args) throws IOException 
 	{
 		BaseTest bt=new BaseTest();
 		bt.setUp();
+	
+		LoginPage lp=new LoginPage(driver);
+		Flib flib =new Flib();
+	
+	
 		
 		//get WebElement
-		LoginPage lp=new LoginPage(driver);
-		lp.validLogin(null, null);
+		
+		lp.validLogin(flib.readDataFromProperty(PROP_PATH, "username"), flib.readDataFromProperty(PROP_PATH, "password"));
 		
 		bt.tearDown();
 	}

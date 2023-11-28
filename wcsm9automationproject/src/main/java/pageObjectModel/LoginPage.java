@@ -84,8 +84,7 @@ public class LoginPage
 		usnTB.sendKeys(invalidusn);
 		passTB.sendKeys(invalidpwd);
 		loginButton.click();
-		Thread.sleep(2000);
-		loginButton.clear();
+		usnTB.clear();
 		
 	}
 	
