@@ -1,0 +1,11 @@
+name: Suite
+parallel: methods
+configFailurePolicy: skip
+tests:
+  - name: Test
+  parallel: methods
+  classes:
+    - testNGExecutionPackage.Test3
+    - testNGExecutionPackage.Test2
+    - testNGExecutionPackage.Test1
+

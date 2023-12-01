@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testNGExecutionPackage.SelectTest"/>
+      <parameter name="Browser" value="chrome"></parameter>
+      <parameter name="Url" value="http://laptop-89brlgsi/login.do"></parameter>
+      <parameter name="Username" value="admin"></parameter>
+      <parameter name="Password" value="manager"></parameter>
+      <parameter name="" value=""></parameter>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -2,17 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="" value=""/>
+    <parameter name="Username" value="admin"/>
+    <parameter name="Url" value="http://laptop-89brlgsi/login.do"/>
+    <parameter name="Browser" value="chrome"/>
+    <parameter name="Password" value="manager"/>
     <classes>
-      <class name="testNGExecutionPackage.SqlTest">
+      <class name="testNGExecutionPackage.SelectTest">
         <methods>
-          <include name="sql_method"/>
+          <include name="selectTestMethod"/>
         </methods>
-      </class> <!-- testNGExecutionPackage.SqlTest -->
-      <class name="testNGExecutionPackage.SeleniumTest">
-        <methods>
-          <include name="selenium_Method"/>
-        </methods>
-      </class> <!-- testNGExecutionPackage.SeleniumTest -->
+      </class> <!-- testNGExecutionPackage.SelectTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
