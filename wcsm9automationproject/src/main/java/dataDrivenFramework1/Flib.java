@@ -7,6 +7,7 @@ import java.util.Properties;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -22,8 +23,18 @@ public class Flib
 		Sheet sheet = wb.getSheet(sheetName);
 		Row row = sheet.getRow(rowNo);
 		Cell cell = row.getCell(cellNo);
-		String data = cell.getStringCellValue();
+		String data=null;
+		if(cell.getCellType().equals(cell.getCellType().STRING))
+		{
+			data=cell.getStringCellValue();
+		}
+		else
+		{
+			data=cell.getStringCellValue().valueOf(cell.getNumericCellValue());
+
+		}
 		return data;
+
 	}
 	
 	//to write data

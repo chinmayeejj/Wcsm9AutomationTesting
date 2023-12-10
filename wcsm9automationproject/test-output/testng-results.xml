@@ -1,37 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-01T12:33:13 IST" name="Default suite" finished-at="2023-12-01T12:33:35 IST" duration-ms="21596">
+  <suite started-at="2023-12-07T12:55:40 IST" name="Default suite" finished-at="2023-12-07T12:56:16 IST" duration-ms="35379">
     <groups>
     </groups>
-    <test started-at="2023-12-01T12:33:13 IST" name="Default test" finished-at="2023-12-01T12:33:35 IST" duration-ms="21596">
-      <class name="testNGAnnotationsAndFlags.GoogleSearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testNGAnnotationsAndFlags.GoogleSearchTest@27f981c6]" started-at="2023-12-01T12:33:13 IST" name="setUp" finished-at="2023-12-01T12:33:21 IST" duration-ms="8008" status="PASS">
+    <test started-at="2023-12-07T12:55:40 IST" name="Default test" finished-at="2023-12-07T12:56:16 IST" duration-ms="35379">
+      <class name="testNGAnnotationsAndFlags.ActiTimeDataProviderFlag">
+        <test-method signature="invalidLogin(java.lang.String,java.lang.String)[pri:0, instance:testNGAnnotationsAndFlags.ActiTimeDataProviderFlag@d9345cd]" started-at="2023-12-07T12:55:40 IST" name="invalidLogin" data-provider="TestData" finished-at="2023-12-07T12:55:50 IST" duration-ms="9735" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ad-min]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MAnagert]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="search_java()[pri:0, instance:testNGAnnotationsAndFlags.GoogleSearchTest@27f981c6]" started-at="2023-12-01T12:33:21 IST" name="search_java" finished-at="2023-12-01T12:33:24 IST" duration-ms="2471" status="PASS">
+        </test-method> <!-- invalidLogin -->
+        <test-method signature="invalidLogin(java.lang.String,java.lang.String)[pri:0, instance:testNGAnnotationsAndFlags.ActiTimeDataProviderFlag@d9345cd]" started-at="2023-12-07T12:55:50 IST" name="invalidLogin" data-provider="TestData" finished-at="2023-12-07T12:55:55 IST" duration-ms="5192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ad-iin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MA43gert]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search_java -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNGAnnotationsAndFlags.GoogleSearchTest@27f981c6]" started-at="2023-12-01T12:33:24 IST" name="tearDown" finished-at="2023-12-01T12:33:24 IST" duration-ms="444" status="PASS">
+        </test-method> <!-- invalidLogin -->
+        <test-method signature="invalidLogin(java.lang.String,java.lang.String)[pri:0, instance:testNGAnnotationsAndFlags.ActiTimeDataProviderFlag@d9345cd]" started-at="2023-12-07T12:55:55 IST" name="invalidLogin" data-provider="TestData" finished-at="2023-12-07T12:56:01 IST" duration-ms="5318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adfdf-min]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MAna434rt]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testNGAnnotationsAndFlags.GoogleSearchTest@27f981c6]" started-at="2023-12-01T12:33:24 IST" name="setUp" finished-at="2023-12-01T12:33:32 IST" duration-ms="7693" status="PASS">
+        </test-method> <!-- invalidLogin -->
+        <test-method signature="invalidLogin(java.lang.String,java.lang.String)[pri:0, instance:testNGAnnotationsAndFlags.ActiTimeDataProviderFlag@d9345cd]" started-at="2023-12-07T12:56:01 IST" name="invalidLogin" data-provider="TestData" finished-at="2023-12-07T12:56:07 IST" duration-ms="5930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[addfgdin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MAndfgert]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="search_selenium()[pri:0, instance:testNGAnnotationsAndFlags.GoogleSearchTest@27f981c6]" started-at="2023-12-01T12:33:32 IST" name="search_selenium" finished-at="2023-12-01T12:33:35 IST" duration-ms="2451" status="PASS">
+        </test-method> <!-- invalidLogin -->
+        <test-method signature="invalidLogin(java.lang.String,java.lang.String)[pri:0, instance:testNGAnnotationsAndFlags.ActiTimeDataProviderFlag@d9345cd]" started-at="2023-12-07T12:56:07 IST" name="invalidLogin" data-provider="TestData" finished-at="2023-12-07T12:56:16 IST" duration-ms="9038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ad-ff]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MA874gert]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search_selenium -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNGAnnotationsAndFlags.GoogleSearchTest@27f981c6]" started-at="2023-12-01T12:33:35 IST" name="tearDown" finished-at="2023-12-01T12:33:35 IST" duration-ms="365" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testNGAnnotationsAndFlags.GoogleSearchTest -->
+        </test-method> <!-- invalidLogin -->
+      </class> <!-- testNGAnnotationsAndFlags.ActiTimeDataProviderFlag -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

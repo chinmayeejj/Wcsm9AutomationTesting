@@ -40,6 +40,8 @@ public class GetAllSelectedOptions
 					Thread.sleep(2000);
 					System.out.println(opt1);
 			}
+				Thread.sleep(3000);
+				driver.quit();
 		
 		
 

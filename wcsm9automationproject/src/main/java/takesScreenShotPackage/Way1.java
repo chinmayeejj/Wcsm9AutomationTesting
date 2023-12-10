@@ -14,7 +14,7 @@ public class Way1
 {
 	public static void main(String[] args) throws IOException 
 	{
-		//directly create  ovject of driver specific class
+		//directly create  object of driver specific class
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));

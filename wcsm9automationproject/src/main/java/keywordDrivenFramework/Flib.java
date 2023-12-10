@@ -33,9 +33,10 @@ public class Flib
 			data=cell.getStringCellValue();
 		}
 		
-		else if(cell.getCellType()==cell.getCellType().NUMERIC)
+		else
 		{
 			data=cell.getStringCellValue().valueOf(cell.getNumericCellValue());
+
 		}
 		
 		//String data = cell.getStringCellValue();

@@ -31,6 +31,9 @@ public class DeSelectAll {
 		}
 		Thread.sleep(2000);
 		sel.deselectAll();
+		Thread.sleep(3000);
+		driver.quit();
+
 	}	
 
 }

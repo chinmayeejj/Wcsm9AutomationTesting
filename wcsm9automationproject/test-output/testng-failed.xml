@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGAnnotationsAndFlags.GoogleSearchTest">
+      <class name="listenerPackage.ValidLogin">
         <methods>
-          <include name="search_java"/>
-          <include name="search_selenium"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="validLogin"/>
         </methods>
-      </class> <!-- testNGAnnotationsAndFlags.GoogleSearchTest -->
+      </class> <!-- listenerPackage.ValidLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

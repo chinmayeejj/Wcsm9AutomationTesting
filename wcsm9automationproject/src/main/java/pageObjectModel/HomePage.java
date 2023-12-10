@@ -11,7 +11,7 @@ public class HomePage
 	@FindBy(xpath="//div[text()='Time-Track']/following-sibling::div/img") private WebElement TimeTrack;
 	@FindBy(xpath="//div[text()='Tasks']/following-sibling::img") private WebElement Tasks_module ;
 	@FindBy(xpath="//div[text()='Reports']/following-sibling::img") private WebElement Reports_Module ;
-	@FindBy(xpath="//div[text()='Users']/following-sibling::div/img") private WebElement Users_Module ;
+	@FindBy(xpath="//A[contains(@class,'content users')]/descendant::IMG[@class='sizer']") private WebElement Users_Module ;
 	@FindBy(xpath="//div[text()='Settings']/following-sibling::img") private WebElement Settings_Module ;
 	@FindBy(xpath="//div[text()='Work Schedule']/following-sibling::img") private WebElement Work_Schedule_Module ;
 	@FindBy(partialLinkText = "Logout") private WebElement Logout_Link;

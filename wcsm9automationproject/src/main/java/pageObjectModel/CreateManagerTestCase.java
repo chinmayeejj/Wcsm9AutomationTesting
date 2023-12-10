@@ -29,8 +29,16 @@ public class CreateManagerTestCase extends BaseTest
 		
 		up.create_New_User(usn,pass,fName,lName,wDuration);
 		
+		
+		up.deleteUser();
+		
+		Thread.sleep(2000);
+		
+		WorkLib wl=new WorkLib();
+		//wl.handle_Alert_comfirmation_popup();
+		
 		bt.tearDown();
-
+		
 		
 		
 	}

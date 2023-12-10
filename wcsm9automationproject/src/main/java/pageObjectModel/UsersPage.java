@@ -2,15 +2,17 @@ package pageObjectModel;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class UsersPage 
 {
+	static WebDriver driver;
 	@FindBy(xpath = "//input[@value='Create New User']")
 	private WebElement Create_New_User_Button;
 	
-	@FindBy(name="username")
+	@FindBy(xpath="//tr/td/input[@name=\"username\"]")
 	private WebElement UsernameTB_UsersPage;
 	@FindBy(name="passwordText")
 	private WebElement PasswordTB_UsersPage;
@@ -26,10 +28,12 @@ public class UsersPage
 	private WebElement OverTime_Tracking_CheckBox;
 	@FindBy(xpath = "//input[@name='overtimeTrackingLevel' and @id='overtimeTrackingLevel_ReadOnly' ]")
 	private WebElement Tracking_Radio_Button2;
-	@FindBy(xpath = "//input[@name='hireDateStr']")
+	@FindBy(xpath = "//img[@id=\"ext-gen7\"]")
 	private WebElement Calender_Icon;
 	@FindBy(name="ext-gen84")
 	private WebElement Ok_Calender_Button;
+	@FindBy(xpath="//span[text()='22']")
+	private WebElement Date;
 	
 	@FindBy(xpath="//input[@id='right9']")
 	private WebElement CheckBox1;
@@ -46,7 +50,7 @@ public class UsersPage
 	@FindBy(xpath="//input[@id='right7']")
 	private WebElement CheckBox7;
 	
-	@FindBy(xpath="//input[@value='   Create User   ']")
+	@FindBy(xpath="//tbody/tr/td/input[@value='   Create User   ']")
 	private WebElement Create_User_Button;
 	
 	//delete user elements
@@ -59,17 +63,7 @@ public class UsersPage
 	
 
 	
-	public WebElement getTo_Desable() {
-		return To_Desable;
-	}
-
-	public WebElement getUsers_Name_Link() {
-		return Users_Name_Link;
-	}
-
-	public WebElement getDelete_This_User_Button() {
-		return Delete_This_User_Button;
-	}
+	
 
 	//utilization
 	public UsersPage(WebDriver driver)
@@ -152,31 +146,74 @@ public class UsersPage
 	public WebElement getCreate_User_Button() {
 		return Create_User_Button;
 	}
+	
  
+	public WebElement getDate() {
+		return Date;
+	}
+	public WebElement getTo_Desable() {
+		return To_Desable;
+	}
+
+	public WebElement getUsers_Name_Link() {
+		return Users_Name_Link;
+	}
+
+	public WebElement getDelete_This_User_Button() {
+		return Delete_This_User_Button;
+	}
+
+	
+
 	//operational_ Method
-	public void create_New_User(String username,String pass,String F_name,String L_name,String w_duration)
+	public void create_New_User(String username,String pass,String F_name,String L_name,String w_duration) throws InterruptedException
 	{
+		Create_New_User_Button.click();
+		Thread.sleep(2000);
 		UsernameTB_UsersPage.sendKeys(username);
 		PasswordTB_UsersPage.sendKeys(pass);
 		ReWrite_pass_TB.sendKeys(pass);
 		First_Name_TB.sendKeys(F_name);
 		Last_NameTB.sendKeys(L_name);
+		Thread.sleep(2000);
+		WorkDay_Duration_TB.clear();
 		WorkDay_Duration_TB.sendKeys(w_duration);
+		Thread.sleep(2000);
 		OverTime_Tracking_CheckBox.click();
-		//Tracking_Radio_Button2.click();
-		//Calender_Icon.click();
+		Tracking_Radio_Button2.click();
+		Calender_Icon.click();
+		Date.click();
+		Thread.sleep(2000);
+
+		
 		
 		
 		//Ok_Calender_Button.click();
 		CheckBox1.click();
+		Thread.sleep(2000);
 		CheckBox2.click();
+		Thread.sleep(2000);
 		CheckBox3.click();
-		CheckBox4.click();
+		Thread.sleep(2000);
+		//CheckBox4.click();
+		Thread.sleep(2000);
 		CheckBox5.click();
+		Thread.sleep(2000);
 		CheckBox6.click();
+		Thread.sleep(2000);
 		CheckBox7.click();
 		
 		Create_User_Button.click();
+	}
+	
+	public void deleteUser() throws InterruptedException
+	{
+		
+		Users_Name_Link.click();
+		Delete_This_User_Button.click();
+		Thread.sleep(2000);
+	  
+		
 	}
 	
 	
