@@ -1,5 +1,7 @@
 package pagePackage;
 
+import java.awt.AWTException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -207,14 +209,15 @@ public class UsersPage
 		Create_User_Button.click();
 	}
 	
-	public void deleteUser() throws InterruptedException
+	public void deleteUser() throws InterruptedException, AWTException
 	{
 		
 		Users_Name_Link.click();
 		Delete_This_User_Button.click();
 		Thread.sleep(2000);
-		WorkLib wlb=new WorkLib();
-		wlb.acceptConfirmationPopUp();
+     	WorkLib wlb=new WorkLib();
+//		wlb.acceptConfirmationPopUp();
+     	wlb.hitEnterButtonMethod();
 	  
 		
 	}

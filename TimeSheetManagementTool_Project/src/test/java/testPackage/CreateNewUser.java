@@ -39,13 +39,13 @@ public class CreateNewUser extends BaseTest{
 		up.create_New_User(usn,pass,fName,lName,wDuration);
 		
 		
-		up.deleteUser();
-		
+//		up.deleteUser();
+//		
 		Thread.sleep(2000);
 		
-		//WorkLib wl=new WorkLib();
-		//wl.acceptAlertPopUp();;
-		
+//		WorkLib wl=new WorkLib();
+//		wl.acceptAlertPopUp();;
+//		
 	
 		
   }

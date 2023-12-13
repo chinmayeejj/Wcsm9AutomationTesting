@@ -1,177 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-10T11:55:57 IST" name="Suite" finished-at="2023-12-10T11:57:12 IST" duration-ms="75024">
+  <suite started-at="2023-12-13T20:44:31 IST" name="Suite" finished-at="2023-12-13T20:45:38 IST" duration-ms="67182">
     <groups>
     </groups>
-    <test started-at="2023-12-10T11:55:57 IST" name="Test" finished-at="2023-12-10T11:57:12 IST" duration-ms="75024">
+    <test started-at="2023-12-13T20:44:31 IST" name="Test" finished-at="2023-12-13T20:45:38 IST" duration-ms="67182">
       <class name="testPackage.ValidLoginTestCase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.ValidLoginTestCase@1ed6388a]" started-at="2023-12-10T11:55:57 IST" name="setUp" finished-at="2023-12-10T11:56:04 IST" duration-ms="6787" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.ValidLoginTestCase@1ed6388a]" started-at="2023-12-13T20:44:31 IST" name="setUp" finished-at="2023-12-13T20:44:36 IST" duration-ms="5284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLogin()[pri:0, instance:testPackage.ValidLoginTestCase@1ed6388a]" started-at="2023-12-10T11:56:04 IST" name="validLogin" finished-at="2023-12-10T11:56:06 IST" duration-ms="1814" status="PASS">
+        <test-method signature="validLogin()[pri:0, instance:testPackage.ValidLoginTestCase@1ed6388a]" started-at="2023-12-13T20:44:36 IST" name="validLogin" finished-at="2023-12-13T20:44:38 IST" duration-ms="1607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.ValidLoginTestCase@1ed6388a]" started-at="2023-12-10T11:56:06 IST" name="tearDown" finished-at="2023-12-10T11:56:06 IST" duration-ms="421" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.ValidLoginTestCase@1ed6388a]" started-at="2023-12-13T20:44:38 IST" name="tearDown" finished-at="2023-12-13T20:44:39 IST" duration-ms="470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testPackage.ValidLoginTestCase -->
       <class name="testPackage.InvalidLoginTestCase">
-        <test-method signature="f()[pri:0, instance:testPackage.InvalidLoginTestCase@740cae06]" started-at="2023-12-10T11:56:06 IST" name="f" finished-at="2023-12-10T11:56:06 IST" duration-ms="3" status="PASS">
+        <test-method signature="f()[pri:0, instance:testPackage.InvalidLoginTestCase@740cae06]" started-at="2023-12-13T20:44:39 IST" name="f" finished-at="2023-12-13T20:44:39 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
       </class> <!-- testPackage.InvalidLoginTestCase -->
       <class name="testPackage.CreateNewCustomer">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.CreateNewCustomer@26d9b808]" started-at="2023-12-10T11:56:06 IST" name="setUp" finished-at="2023-12-10T11:56:09 IST" duration-ms="2808" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.CreateNewCustomer@26d9b808]" started-at="2023-12-13T20:44:39 IST" name="setUp" finished-at="2023-12-13T20:44:42 IST" duration-ms="3080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="create_ProjectAndCustomer()[pri:0, instance:testPackage.CreateNewCustomer@26d9b808]" started-at="2023-12-10T11:56:09 IST" name="create_ProjectAndCustomer" finished-at="2023-12-10T11:56:24 IST" duration-ms="14677" status="PASS">
+        <test-method signature="create_ProjectAndCustomer()[pri:0, instance:testPackage.CreateNewCustomer@26d9b808]" started-at="2023-12-13T20:44:42 IST" name="create_ProjectAndCustomer" finished-at="2023-12-13T20:44:55 IST" duration-ms="13514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create_ProjectAndCustomer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.CreateNewCustomer@26d9b808]" started-at="2023-12-10T11:56:24 IST" name="tearDown" finished-at="2023-12-10T11:56:24 IST" duration-ms="507" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.CreateNewCustomer@26d9b808]" started-at="2023-12-13T20:44:55 IST" name="tearDown" finished-at="2023-12-13T20:44:56 IST" duration-ms="549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testPackage.CreateNewCustomer -->
       <class name="testPackage.DeleteAll">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.DeleteAll@644baf4a]" started-at="2023-12-10T11:56:58 IST" name="setUp" finished-at="2023-12-10T11:57:01 IST" duration-ms="2780" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.DeleteAll@644baf4a]" started-at="2023-12-13T20:45:28 IST" name="setUp" finished-at="2023-12-13T20:45:31 IST" duration-ms="2958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="deleteMethod()[pri:0, instance:testPackage.DeleteAll@644baf4a]" started-at="2023-12-10T11:57:01 IST" name="deleteMethod" finished-at="2023-12-10T11:57:12 IST" duration-ms="11144" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to find element with locator By.xpath: (//td[@class='selectCustomer'])[1]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//td[@class='selectCustomer'])[1]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at pagePackage.TasksPage.deleteProjectAndCustomer(TasksPage.java:108)
-at testPackage.DeleteAll.deleteMethod(DeleteAll.java:25)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="deleteMethod()[pri:0, instance:testPackage.DeleteAll@644baf4a]" started-at="2023-12-13T20:45:31 IST" name="deleteMethod" finished-at="2023-12-13T20:45:38 IST" duration-ms="6761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.DeleteAll@644baf4a]" started-at="2023-12-10T11:57:12 IST" name="tearDown" finished-at="2023-12-10T11:57:12 IST" duration-ms="419" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.DeleteAll@644baf4a]" started-at="2023-12-13T20:45:38 IST" name="tearDown" finished-at="2023-12-13T20:45:38 IST" duration-ms="585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testPackage.DeleteAll -->
       <class name="testPackage.CreateNewUser">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.CreateNewUser@f78a47e]" started-at="2023-12-10T11:56:24 IST" name="setUp" finished-at="2023-12-10T11:56:27 IST" duration-ms="2663" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.CreateNewUser@f78a47e]" started-at="2023-12-13T20:44:56 IST" name="setUp" finished-at="2023-12-13T20:44:59 IST" duration-ms="3194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="create_new_User()[pri:0, instance:testPackage.CreateNewUser@f78a47e]" started-at="2023-12-10T11:56:27 IST" name="create_new_User" finished-at="2023-12-10T11:56:57 IST" duration-ms="30390" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to find element with locator By.xpath: (//td[@class='listtblcell'])[1]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//td[@class='listtblcell'])[1]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at pagePackage.UsersPage.deleteUser(UsersPage.java:213)
-at testPackage.CreateNewUser.create_new_User(CreateNewUser.java:42)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="create_new_User()[pri:0, instance:testPackage.CreateNewUser@f78a47e]" started-at="2023-12-13T20:44:59 IST" name="create_new_User" finished-at="2023-12-13T20:45:27 IST" duration-ms="28474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create_new_User -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.CreateNewUser@f78a47e]" started-at="2023-12-10T11:56:57 IST" name="tearDown" finished-at="2023-12-10T11:56:58 IST" duration-ms="460" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.CreateNewUser@f78a47e]" started-at="2023-12-13T20:45:27 IST" name="tearDown" finished-at="2023-12-13T20:45:28 IST" duration-ms="555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

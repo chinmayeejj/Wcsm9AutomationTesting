@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testPackage.CreateNewUser">
+      <class name="testPackage.DeleteAll">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="create_new_User"/>
+          <include name="deleteMethod"/>
         </methods>
-      </class> <!-- testPackage.CreateNewUser -->
+      </class> <!-- testPackage.DeleteAll -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

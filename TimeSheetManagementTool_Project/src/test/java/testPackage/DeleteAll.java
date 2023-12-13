@@ -1,5 +1,6 @@
 package testPackage;
 
+import java.awt.AWTException;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
@@ -13,7 +14,7 @@ import pagePackage.UsersPage;
 
 public class DeleteAll extends BaseTest {
   @Test
-  public void deleteMethod() throws IOException, InterruptedException 
+  public void deleteMethod() throws IOException, InterruptedException, AWTException 
   {
 	  	LoginPage lp=new LoginPage(driver);
 		Flib flib =new Flib();

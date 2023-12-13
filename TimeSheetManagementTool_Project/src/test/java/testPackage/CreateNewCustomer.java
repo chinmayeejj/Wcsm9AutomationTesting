@@ -36,8 +36,8 @@ public class CreateNewCustomer extends BaseTest {
 			TasksPage tp = new TasksPage(driver);
 			tp.createProjectsAndCustomer(flib.readExcelData(EXCEL_PATH, CUST_PROSHEET_NAME,1,0),flib.readExcelData(EXCEL_PATH, CUST_PROSHEET_NAME,1,1));
 			Thread.sleep(2000);
-			tp.deleteProjectAndCustomer();
-			Thread.sleep(2000);
+//			tp.deleteProjectAndCustomer();
+//			Thread.sleep(2000);
 			
 		}
   

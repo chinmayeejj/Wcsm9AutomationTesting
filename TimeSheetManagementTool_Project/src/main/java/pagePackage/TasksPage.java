@@ -105,6 +105,7 @@ public class TasksPage
 		
 		public void deleteProjectAndCustomer()
 		{
+			Projects_Customers_Sub_Module.click();
 			First_Customer.click();
 			Delete_Selected_Customer_Button.click();
 			Delete_Customer_Popup.click();
