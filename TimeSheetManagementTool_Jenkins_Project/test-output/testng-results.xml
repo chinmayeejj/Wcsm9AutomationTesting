@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-06T14:41:12 IST" name="Suite" finished-at="2024-01-06T14:42:31 IST" duration-ms="78817">
+    <groups>
+    </groups>
+    <test started-at="2024-01-06T14:41:12 IST" name="Test" finished-at="2024-01-06T14:42:31 IST" duration-ms="78817">
+      <class name="testPackage.ValidLoginTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.ValidLoginTestCase@1ed6388a]" started-at="2024-01-06T14:41:12 IST" name="setUp" finished-at="2024-01-06T14:41:24 IST" duration-ms="11078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLogin()[pri:0, instance:testPackage.ValidLoginTestCase@1ed6388a]" started-at="2024-01-06T14:41:24 IST" name="validLogin" finished-at="2024-01-06T14:41:24 IST" duration-ms="648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.ValidLoginTestCase@1ed6388a]" started-at="2024-01-06T14:41:24 IST" name="tearDown" finished-at="2024-01-06T14:41:25 IST" duration-ms="421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testPackage.ValidLoginTestCase -->
+      <class name="testPackage.InvalidLoginTestCase">
+        <test-method signature="f()[pri:0, instance:testPackage.InvalidLoginTestCase@740cae06]" started-at="2024-01-06T14:41:25 IST" name="f" finished-at="2024-01-06T14:41:25 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- testPackage.InvalidLoginTestCase -->
+      <class name="testPackage.CreateNewCustomer">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.CreateNewCustomer@26d9b808]" started-at="2024-01-06T14:41:25 IST" name="setUp" finished-at="2024-01-06T14:41:27 IST" duration-ms="2769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="create_ProjectAndCustomer()[pri:0, instance:testPackage.CreateNewCustomer@26d9b808]" started-at="2024-01-06T14:41:27 IST" name="create_ProjectAndCustomer" finished-at="2024-01-06T14:41:47 IST" duration-ms="19566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_ProjectAndCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.CreateNewCustomer@26d9b808]" started-at="2024-01-06T14:41:47 IST" name="tearDown" finished-at="2024-01-06T14:41:47 IST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testPackage.CreateNewCustomer -->
+      <class name="testPackage.DeleteAll">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.DeleteAll@644baf4a]" started-at="2024-01-06T14:42:21 IST" name="setUp" finished-at="2024-01-06T14:42:23 IST" duration-ms="2715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteMethod()[pri:0, instance:testPackage.DeleteAll@644baf4a]" started-at="2024-01-06T14:42:23 IST" name="deleteMethod" finished-at="2024-01-06T14:42:31 IST" duration-ms="7163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.DeleteAll@644baf4a]" started-at="2024-01-06T14:42:31 IST" name="tearDown" finished-at="2024-01-06T14:42:31 IST" duration-ms="638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testPackage.DeleteAll -->
+      <class name="testPackage.CreateNewUser">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.CreateNewUser@f78a47e]" started-at="2024-01-06T14:41:47 IST" name="setUp" finished-at="2024-01-06T14:41:50 IST" duration-ms="2738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="create_new_User()[pri:0, instance:testPackage.CreateNewUser@f78a47e]" started-at="2024-01-06T14:41:50 IST" name="create_new_User" finished-at="2024-01-06T14:42:20 IST" duration-ms="29866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_new_User -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.CreateNewUser@f78a47e]" started-at="2024-01-06T14:42:20 IST" name="tearDown" finished-at="2024-01-06T14:42:21 IST" duration-ms="602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testPackage.CreateNewUser -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
